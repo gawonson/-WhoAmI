@@ -1,1 +1,539 @@
-<h1>손가원 포트폴리오</h1>
+<html>
+
+<head>
+	<title>Story by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<section
+			class="banner style1 orient-left content-align-left image-position-right groupbeecreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>손가원</h1>
+				<p class="major">
+					저는 <b>빠르고 효율적인 문제 해결을 선호</b>하며, 새로운 기술을 접할 때마다 설렘을 느끼는 개발자입니다. 주어진 과제를 가장 <b>효과적으로 처리</b>하는 능력뿐만
+					아니라, 팀과의 <b>협업을 중시</b>하여 더 나은 방법을 지속적으로 탐구하고 있습니다. 변화하는 환경 속에서도 적응력이 뛰어나, 새로운 기술과 작업 방식에 두려움 없이
+					도전하며, 이를 빠르게 습득해 실제 프로젝트에 적용해 왔습니다. 풀스택 개발자로서 백엔드와 프론트엔드 모두를 깊이 이해하며, 프로젝트 전 과정을 주도적으로 이끌고, 팀과 함께
+					<b>효율적이면서도 창의적인 솔루션</b>을 찾아내는 데 기여해 왔습니다.
+				</p>
+				<ul class="actions stacked">
+					<a href="#" class="button big wide smooth-scroll-middle" id="contact-btn">Contact</a>
+				</ul>
+
+				<!-- Modal -->
+				<div id="contact-modal" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<h2>Contact</h2>
+						<div class="modal-body">
+							<div class="contact-info">
+								<p><b>이름:</b> 손가원 (Son GaWon)</p>
+								<p><b>Email:</b> ok466sgw@naver.com</p>
+								<p><b>핸드폰:</b> 010-2087-8798</p>
+								<p><b>git:</b> <a href="https://github.com/gawonson"
+										target="_blank">https://github.com/gawonson</a></p>
+							</div>
+							<div>
+								<img src="images/profile02.jpeg" width="200px" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="image right">
+				<img id="image-slide" src="images/profile01.jpeg" alt="Profile Image">
+			</div>
+
+
+		</section>
+
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="first">
+			<div class="content">
+				<h2>기술 스택 소개</h2>
+				<p>저는 다양한 언어와 도구를 활용하여 프로젝트를 수행합니다. 주로 사용하는 기술 스택은 다음과 같습니다:</p>
+				<ul>
+					<li><i class="fas fa-code"></i> <strong>Programming Languages:</strong> Java, JavaScript(ES6),
+						HTML5, CSS3</li>
+					<li><i class="fab fa-react"></i> <strong>Framework/Library:</strong> React, Spring Boot, JQuery,
+						VITE</li>
+					<li><i class="fas fa-server"></i> <strong>Server:</strong> MongoDB, MySQL, PostgreSQL, Nginx</li>
+					<li><i class="fas fa-laptop-code"></i> <strong>Environment:</strong> Linux(Ubuntu), Windows, NCloud
+						(VM)</li>
+					<li><i class="fas fa-tools"></i> <strong>ETC:</strong> Jira, Postman, OpenFeign, Axios, SMTP, IMAP
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>대표 프로젝트</h2>
+				<ul>
+					<p><a href="#" id="link1">사내 그룹웨어 프로젝트</a>&nbsp;:&nbsp;
+						MSA 배포 방식을 통해 여러 서비스 간 통신을 REST와 SOAP API로 구현한 Spring Boot와 React + VITE 프로젝트
+					</p>
+				</ul>
+				<ul>
+					<p><a href="#" id="link2">블로그 플랫폼</a>&nbsp;:&nbsp;
+						사용자가 블로그 포스트를 작성하고 관리할 수 있는 Spring Boot 기반의 웹 서비스 개발
+					</p>
+				</ul>
+			</div>
+		</section>
+		<!-- Three -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="image">
+				<img src="images/groupbee.png" alt="" />
+			</div>
+			<div class="content">
+				<h2>사내 그룹웨어 프로젝트 (Groupbee)</h2>
+				<ul>
+					<li onclick="showDetails1('structure')"><a>소개 및 개발기간</a></li>
+					<li onclick="showDetails1('tech')"><a>사용 기술</a></li>
+					<li onclick="showDetails1('erd')"><a>프로젝트 구조</a></li>
+					<li onclick="showDetails1('features')"><a>프로젝트 전체 구현 기능</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 아래에 세부 내용을 표시할 섹션 -->
+		<section id="details-section1"
+			class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			style="display:none;">
+			<div class="content" id="details-content1">
+				<!-- 여기에 내용이 동적으로 변경됩니다. -->
+			</div>
+		</section>
+
+
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="image">
+				<img src="images/devlog.png" alt="" />
+			</div>
+			<div class="content">
+				<h2>블로그 플랫폼 (Devlog)</h2>
+				<ul>
+					<li onclick="showDetails2('structure')"><a>소개 및 개발기간</a></li>
+					<li onclick="showDetails2('tech')"><a>사용 기술</a></li>
+					<li onclick="showDetails2('erd')"><a>ERD</a></li>
+					<li onclick="showDetails2('features')"><a>프로젝트 전체 구현 기능</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 아래에 세부 내용을 표시할 섹션 -->
+		<section id="details-section2"
+			class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			style="display:none;">
+			<div class="content" id="details-content2">
+				<!-- 여기에 내용이 동적으로 변경됩니다. -->
+			</div>
+		</section>
+
+		<!-- Five -->
+		<section class="wrapper style1 align-center">
+			<div class="inner inner1">
+				<h2>Groupbee</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+			</div>
+
+			<!-- Gallery -->
+			<div class="gallery style2 medium lightbox onscroll-fade-in">
+				<article>
+					<a href="images/gallery/groupbee/01.jpg" class="image">
+						<img src="images/gallery/groupbee/01.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>전자결재 서비스</h3>
+						<p>전자결재 작성</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/02.jpg" class="image">
+						<img src="images/gallery/groupbee/02.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>전자결재 서비스</h3>
+						<p>전자결재 상태관리</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/03.jpg" class="image">
+						<img src="images/gallery/groupbee/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>전자결재 서비스</h3>
+						<p>전자결재 승인 및 반려 & 전자결재 외부 HR솔루션 연동</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/04.jpg" class="image">
+						<img src="images/gallery/groupbee/04.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>SMTP & IMAP 프로토콜을 이용한 자체 사내메일 서비스 구축</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/05.jpg" class="image">
+						<img src="images/gallery/groupbee/05.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 발송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/06.jpg" class="image">
+						<img src="images/gallery/groupbee/06.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 발송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/07.jpg" class="image">
+						<img src="images/gallery/groupbee/07.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 전송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/08.jpg" class="image">
+						<img src="images/gallery/groupbee/08.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 전송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/09.jpg" class="image">
+						<img src="images/gallery/groupbee/09.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 전송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/10.jpg" class="image">
+						<img src="images/gallery/groupbee/10.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>사내메일 서비스</h3>
+						<p>메일 전송 로직</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/11.jpg" class="image">
+						<img src="images/gallery/groupbee/11.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>실시간 채팅 서비스</h3>
+						<p>websocket을 사용한 실시간 채팅 서비스</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/12.jpg" class="image">
+						<img src="images/gallery/groupbee/12.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>실시간 채팅 서비스</h3>
+						<p>채팅 컴포넌트 - 초기상태 및 유저정보 불러오기</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/13.jpg" class="image">
+						<img src="images/gallery/groupbee/13.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>실시간 채팅 서비스</h3>
+						<p>유저정보 자동 불러오기</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/14.jpg" class="image">
+						<img src="images/gallery/groupbee/14.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>실시간 채팅 서비스</h3>
+						<p>채팅방 목록 가져오기 & 클릭된 방 입장하기 </p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/groupbee/15.jpg" class="image">
+						<img src="images/gallery/groupbee/15.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>실시간 채팅 서비스</h3>
+						<p>메세지 전송 및 WebSocket 연결</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+		</section>
+		<!-- Five-2 -->
+		<section class="wrapper style1 align-center">
+			<div class="inner inner2">
+				<h2>Devlog</h2>
+				<p>프로젝트 내 역할
+					Frontend + Backend
+					<ul style="list-style: none;">
+					<li>게시글 디테일 페이지 ( Backend : REST-API, Frontend : AJAX 호출 및 데이터 가시화 ) </li>
+					<li>게시글 작성폼 ( Backend : REST-API, Frontend : AJAX 호출 & ck-editor )</li>
+					<li>피드페이지 및 랜덤 조회 ( Backend : REST-API, Frontend : AJAX 호출 및 데이터 가시화 )</li>
+					<li> 프로젝트 내의 전체적인 Javascript 로직 관리</li>
+				</ul>
+				</p>
+			</div>
+ 
+			<!-- Gallery -->
+			<div class="gallery style2 medium lightbox onscroll-fade-in">
+				<article>
+					<a href="images/gallery/devlog/01.jpg" class="image">
+						<img src="images/gallery/devlog/01.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>블로그 디테일 페이지</h3>
+						<p>게시글 & 좋아요 & 댓글 & 태그 기능의 CRUD</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/devlog/02.jpg" class="image">
+						<img src="images/gallery/devlog/02.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>게시글 작성 폼</h3>
+						<p>게시글 작성 & category 선택 & tag 설정</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<a href="images/gallery/devlog/03.jpg" class="image">
+						<img src="images/gallery/devlog/03.jpg" alt="" />
+					</a>
+					<div class="caption">
+						<h3>피드페이지 및 랜덤 조회</h3>
+						<p>모든 게시글 랜덤값 조회 & 썸네일 화면 노출 & 해당 게시글의 좋아요 버튼 노출</p>
+						<ul class="actions fixed">
+							<li><span class="button small">Details</span></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+		</section>
+
+		<!-- Six -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Ipsum sed consequat</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class="icon style2 major fa-gem"></span>
+						<h3>Lorem</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-save"></span>
+						<h3>Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-chart-bar"></span>
+						<h3>Dolor</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-wifi"></span>
+						<h3>Amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-cog"></span>
+						<h3>Magna</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon style2 major fa-paper-plane"></span>
+						<h3>Tempus</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-desktop"></span>
+						<h3>Aliquam</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-sync-alt"></span>
+						<h3>Elit</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-hashtag"></span>
+						<h3>Morbi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-bolt"></span>
+						<h3>Turpis</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-envelope"></span>
+						<h3>Ultrices</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-leaf"></span>
+						<h3>Risus</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Seven -->
+		<section class="wrapper style1 align-center">
+			<div class="inner medium">
+				<h2>Get in touch</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" value="" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" value="" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+					</li>
+					<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+					</li>
+					<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
+					</li>
+					<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
