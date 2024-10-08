@@ -4,6 +4,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// timeline.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const events = document.querySelectorAll(".myTL-event");
+    events.forEach(event => {
+        event.addEventListener("mouseover", function () {
+            event.querySelector(".myTL-event-content").style.opacity = "1";
+        });
+        event.addEventListener("mouseout", function () {
+            event.querySelector(".myTL-event-content").style.opacity = "0";
+        });
+    });
+});
+
+
 // 사내 그룹웨어 프로젝트 클릭 시 inner1으로 스크롤
 document.getElementById('link1').addEventListener('click', function(e) {
     e.preventDefault(); // 링크의 기본 동작을 막음
@@ -53,6 +68,31 @@ function showDetails1(type) {
 
 	// 각 항목에 대한 내용 정의
 	const details = {
+		ref:`
+		<div style="display: flex; justify-content: space-between; align-items: center;">
+			<div>
+				<h3>
+					<a href="https://github.com/groupBee" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github"></i> git
+					</a>
+				</h3>
+				<h3>
+					<a href="https://drive.google.com/file/d/1M6Mz18AVEgEUUfmnzvTyGJsPZeZ3zups/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-file-alt"></i> 발표자료
+					</a>
+				</h3>
+			</div>
+			<div style="width: 60%;">
+				<iframe width="100%" height="315" 
+				src="https://www.youtube.com/embed/4FjUpdmVVVY?start=8113&autoplay=1&cc_load_policy=0&mute=1" 
+				title="YouTube video player" frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+
+
+			`,
 		tech: `
             <h2>사용 기술</h2>
 Frontend
@@ -139,7 +179,7 @@ Tool
 			<p>개발기간 : 2024.07.25 ~ 2024.09.19 (약 2달) </p>
             <p>Kubernetes 를 활용한 MSA(Micro Service Architecture) 기반의 그룹웨어 입니다.
 				벌집은 현대적인 그룹웨어 솔루션으로, 사내 업무의 효율성을 증진시키기 위해 만들게되었습니다. 사용자 친화적인 인터페이스를 통해 누구나 쉽게 접근하고 활용할 수 있도록 설계하였습니다.
-				우리의 목표는 단순한 업무 도구를 넘어서, 직원들의 소통과 협력할 수 있는 환경을 조성하는 것입니다. 벌집은 기존 HR 시스템과의 연동이 가능하며, 팀 관리와 인사 프로세스 또한 연결가능합니다. 이를 통해 시간과 자본을 절약하고, 보다 효율적인 업무 환경을 제공합니다.
+				이 프로젝트의 목표는 단순한 업무 도구를 넘어서, 직원들의 소통과 협력할 수 있는 환경을 조성하는 것입니다. 벌집은 기존 HR 시스템과의 연동이 가능하며, 팀 관리와 인사 프로세스 또한 연결가능합니다. 이를 통해 시간과 자본을 절약하고, 보다 효율적인 업무 환경을 제공합니다.
 				</p>
         `,
 		erd: `
@@ -184,6 +224,21 @@ function showDetails2(type) {
 
 	// 각 항목에 대한 내용 정의
 	const details = {
+		ref:`
+			<div style="display: flex; justify-content: space-between; align-items: center;">
+				<h3>
+					<a href="https://github.com/gawonson/DevLog" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github"></i> git
+					</a>
+				</h3>
+				<h3>
+					<a href="https://drive.google.com/file/d/1vcTKJt71ERJShg0g15pT1cA2kW2tCHPf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-file-alt"></i> 발표자료
+					</a>
+				</h3>
+			</div>
+
+			`,
 		tech: `
             <h2>사용 기술</h2> 
 			Front
@@ -218,7 +273,7 @@ function showDetails2(type) {
 		,
 		features: `
             <h2>프로젝트 전체 구현 기능</h2>
-            <p>로그인, 메인페이지, 전자결재, 캘린더, 예약, 게시판, 이메일, 근태관리, 채팅, 화상회의, 관리자페이지</p>
+            <p>카카오톡 로그인, <strong>블로그 글 (작성,조회,수정,삭제)</strong>, <strong>블로그 댓글 (작성,조회,수정,삭제)</strong>, <strong>게시글 랜덤조회 피드페이지</strong>, 카테고리별 분류, 해쉬태그, 좋아요 등 </p>
         `
 	};
 

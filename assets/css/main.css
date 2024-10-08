@@ -8890,3 +8890,111 @@ body.is-preload .items.onload-fade-in>*>.inner {
 	object-fit: cover; /* 이미지 비율 유지하면서 채우기 */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.myTL-timeline {
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.myTL-timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #cccccc;
+}
+
+.myTL-event {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.myTL-event span {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.myTL-event[data-year="2000.08.26"] span {
+    background-color: #FFB300; /* 태어남 */
+}
+
+.myTL-event[data-year="2007.03-2013.02"] span {
+    background-color: #4CAF50; /* 초등학교 */
+}
+
+.myTL-event[data-year="2013.03-2016.02"] span {
+    background-color: #2196F3; /* 중학교 */
+}
+
+.myTL-event[data-year="2016.03-2019.02"] span {
+    background-color: #673AB7; /* 고등학교 */
+}
+
+.myTL-event[data-year="2019.03-2024.02"] span {
+    background-color: #FF5722; /* 전남대학교 */
+}
+
+.myTL-event[data-year="2022.01-2023.01"] span {
+    background-color: #9C27B0; /* 상하이 유학 */
+}
+
+.myTL-event[data-year="2024.03-2024.09"] span {
+    background-color: #009688; /* 네이버 클라우드 과정 */
+}
+
+.myTL-event-content {
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: 10;
+    font-size: 0.85rem; /* 글씨 크기 축소 */
+    text-align: center;
+}
+
+.myTL-event:hover .myTL-event-content {
+    opacity: 1;
+}
+
+.myTL-event-content h4 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.myTL-event-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-container h1 {
+    font-size: 3rem; /* 이름 크게 */
+    margin: 0;
+    padding-right: 10px; /* 나이와 이름 간의 간격 */
+}
+
+.name-container h3 {
+    font-size: 1.8rem; /* 나이 작게 */
+    margin-bottom: 0;
+    color: #555; /* 나이 색상을 살짝 어둡게 */
+}
