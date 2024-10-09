@@ -7,34 +7,34 @@
 // timeline.js
 
 document.addEventListener("DOMContentLoaded", function () {
-    const events = document.querySelectorAll(".myTL-event");
-    events.forEach(event => {
-        event.addEventListener("mouseover", function () {
-            event.querySelector(".myTL-event-content").style.opacity = "1";
-        });
-        event.addEventListener("mouseout", function () {
-            event.querySelector(".myTL-event-content").style.opacity = "0";
-        });
-    });
+	const events = document.querySelectorAll(".myTL-event");
+	events.forEach(event => {
+		event.addEventListener("mouseover", function () {
+			event.querySelector(".myTL-event-content").style.opacity = "1";
+		});
+		event.addEventListener("mouseout", function () {
+			event.querySelector(".myTL-event-content").style.opacity = "0";
+		});
+	});
 });
 
 
 // 사내 그룹웨어 프로젝트 클릭 시 inner1으로 스크롤
-document.getElementById('link1').addEventListener('click', function(e) {
-    e.preventDefault(); // 링크의 기본 동작을 막음
-    document.querySelector('.inner1').scrollIntoView({
-        behavior: 'smooth',  // 부드럽게 스크롤
-        block: 'start'       // 상단에 맞춤
-    });
+document.getElementById('link1').addEventListener('click', function (e) {
+	e.preventDefault(); // 링크의 기본 동작을 막음
+	document.querySelector('.inner1').scrollIntoView({
+		behavior: 'smooth',  // 부드럽게 스크롤
+		block: 'start'       // 상단에 맞춤
+	});
 });
 
 // 블로그 플랫폼 클릭 시 inner2로 스크롤
-document.getElementById('link2').addEventListener('click', function(e) {
-    e.preventDefault(); // 링크의 기본 동작을 막음
-    document.querySelector('.inner2').scrollIntoView({
-        behavior: 'smooth',  // 부드럽게 스크롤
-        block: 'start'       // 상단에 맞춤
-    });
+document.getElementById('link2').addEventListener('click', function (e) {
+	e.preventDefault(); // 링크의 기본 동작을 막음
+	document.querySelector('.inner2').scrollIntoView({
+		behavior: 'smooth',  // 부드럽게 스크롤
+		block: 'start'       // 상단에 맞춤
+	});
 });
 
 
@@ -44,17 +44,17 @@ const btn = document.getElementById("contact-btn");
 const closeBtn = document.getElementsByClassName("close")[0];
 
 // 버튼 클릭 시 모달 열기
-btn.onclick = function() {
+btn.onclick = function () {
 	modal.style.display = "flex";
 }
 
 // 닫기 버튼 클릭 시 모달 닫기
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
 	modal.style.display = "none";
 }
 
 // 모달 바깥 영역 클릭 시 모달 닫기
-window.onclick = function(event) {
+window.onclick = function (event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
 	}
@@ -68,7 +68,7 @@ function showDetails1(type) {
 
 	// 각 항목에 대한 내용 정의
 	const details = {
-		ref:`
+		ref: `
 		<div style="display: flex; justify-content: space-between; align-items: center;">
 			<div>
 				<h3>
@@ -81,6 +81,12 @@ function showDetails1(type) {
 						<i class="fas fa-file-alt"></i> 발표자료
 					</a>
 				</h3>
+				<h3>
+    <a href="https://cdn.groupbee.co.kr/groupbee/manual/GroupBee_%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%89%E1%85%A5%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A5.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-book"></i> 사용설명서
+    </a>
+</h3>
+
 			</div>
 			<div style="width: 60%;">
 				<iframe width="100%" height="315" 
@@ -205,16 +211,16 @@ Tool
 	};
 
 	// 선택된 타입에 따른 내용을 업데이트
-detailsContent.innerHTML = details[type];
+	detailsContent.innerHTML = details[type];
 
-// 섹션을 표시
-detailsSection.style.display = "block";
+	// 섹션을 표시
+	detailsSection.style.display = "block";
 
-// 섹션으로 스크롤 이동
-detailsSection.scrollIntoView({
-  behavior: "smooth",  // 스크롤을 부드럽게 이동
-  block: "start"       // 화면 상단에 맞추어 스크롤
-});
+	// 섹션으로 스크롤 이동
+	detailsSection.scrollIntoView({
+		behavior: "smooth",  // 스크롤을 부드럽게 이동
+		block: "start"       // 화면 상단에 맞추어 스크롤
+	});
 
 }
 
@@ -224,7 +230,7 @@ function showDetails2(type) {
 
 	// 각 항목에 대한 내용 정의
 	const details = {
-		ref:`
+		ref: `
 			<div style="display: flex; justify-content: space-between; align-items: center;">
 				<h3>
 					<a href="https://github.com/gawonson/DevLog" target="_blank" rel="noopener noreferrer">
